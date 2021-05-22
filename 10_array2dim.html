@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, tr, td{
+        border-collapse: collapse;
+        border: 1px solid purple;
+    }
+
+    /* .bbb{
+        background-color: purple;
+        color: white;
+    } */
+    tr:first-child{
+        background-color: purple;
+        color: white;
+    }
+</style>
+<body>
+    <h3>陣列取值</h3>
+    <script>
+        var arr = [[1, 2, 3], [11, 12, 13], [21, 22, 23]];
+
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                if (j < arr[i].length - 1) {
+                    document.write(arr[i][j], ",");
+                } else {
+                    document.write(arr[i][j]);
+                }
+            }
+                document.write('<br>');
+        }
+    </script>
+
+
+   <!-- <h3></h3>
+   <script>
+       var arr = [[1, 2, 3, 4], [11, 12, 13, 14], [21, 22, 23, 24]];
+       document.write("<table>");
+
+           for (var i = 0; i < arr.length; i++) {
+               document.write("<tr>");
+
+               for (j = 0; j < arr[i].length; j++) {
+                   document.write("<td>", arr[i][j], "</td>");
+                }
+
+                document.write("</tr>");
+            }
+
+        document.write("</table>");
+   </script> -->
+
+   <h3>練習</h3>
+   <script>
+       var contact = [["學號", "姓名", "電話", "地址"],
+                      ["94951001", "黃一丁", "0911000333", "Taipei"],
+                      ["94951002", "劉二毛", "0922000887", "Taoyuan"],
+                      ["94951003", "張大化", "0922555779", "Tainan"]];
+
+        document.write("<table>");
+        for(var i = 0; i < contact.length; i++){
+                document.write("<tr class= 'bbb'>");
+                for(var j = 0; j< contact[i].length; j++){
+                        document.write("<td>" + contact[i][j] + "</td>");
+                }
+            document.write("</tr>");    
+        }
+        document.write("</table>");
+   </script>
+
+
+</body>
+</html>
