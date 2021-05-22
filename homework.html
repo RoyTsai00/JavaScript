@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@200&family=Mukta:wght@200&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css\style.css">
+    <title>Homework</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* overflow: hidden; */
+    }
+
+    header{
+        height: 100px;
+    }
+    .logo a:hover{
+        opacity: 50%;
+    }
+    .nav{
+        list-style-type: none;
+        font-family: 'Antonio', sans-serif;
+        font-family: 'Mukta', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        right: 0px;
+        position: relative;
+        bottom: 60px;
+        left: 800px;   
+        width: 100vh;
+
+    }
+    .nav li{
+        display: inline-block;
+        font-size: 20px;
+        padding: 20px;
+    }    
+    .nav a{
+        color: black;
+    }
+    .nav a:hover{
+        color: coral;
+    }
+    .nav a:visited{
+        color: brown
+    }
+    .nav a:active{
+        color: pink;
+    }
+    .ul{
+        cursor: pointer;
+    }
+    main{
+        font-family: 'Antonio', sans-serif;
+        font-family: 'Mukta', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+        color: black;
+        font-weight: bold;
+        position: relative;
+        padding-top: 110px;
+        /* top: 110px; */
+        left: 20px;
+        width: 100vw;
+    }
+    section{
+        font-size: 40px;
+    }
+    #starbucks{
+        color: green;
+    }
+    #statement{
+        line-height: 20px;
+        word-break: break-word;
+        width: 590px;
+    }
+    .more{
+        width: 150px;
+        height: 30px;
+        border-style: solid;
+        border-color: rgb(15, 131, 15);
+        border-radius: 30px;
+        background-color: rgb(15, 131, 15);
+        font-size: 15px;
+        text-align: center;
+        padding: 3px;
+        position: relative;
+        top: 20px;
+    }
+    .more a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;   
+    }
+    .more a:hover{
+        color:rgb(185, 185, 185);
+    }
+    .mainImg{
+        height: 387px;
+        width: 267px;
+        position: relative;
+        left: 800px;
+        bottom: 250px;
+    }
+    .socialmedia{
+        position: relative;
+        bottom: 570px;
+        left: 1100px;
+    }
+    .socialmedia img{
+        width: 50px;
+        height: 50px;
+
+    }
+    
+    .socialmedia ul{ 
+       list-style-type: none;
+    }
+    .socialmedia a:hover{
+        opacity: 50%;
+    }
+    .box{
+        position: absolute;
+        top: 0px;
+        left: 700px;
+        width: 1200px;
+        height: 1200px;
+        background-color: salmon;
+        border-radius: 700px;
+    }
+    .auto{
+        position: absolute;
+        left: 500px;
+        bottom: 30px;
+    }
+    footer ul{
+        list-style-type: none;
+    }
+    footer li{
+        display: inline-block;
+        cursor: pointer;
+        transition: 1.0s;
+    }
+    footer li :hover{
+        transform: translate(-10px);
+    }
+
+
+
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#starbucks"><img src="img\logo.png" alt="starbuck logo"></a>
+        </div>
+        <ul class="nav">
+            <a href="#home"><li>Home</li></a>
+            <a href="#menu"><li>Menu</li></a>
+            <a href="#what's new"><li>What's new</li></a>
+            <a href="#contact"><li>Contact</li></a>
+        </ul>
+    </header>
+    <main>
+        <section>It's not just Coffee</section>
+        <section><span>It's</span><span id="starbucks"> Starbucks</span></section><br>
+        <article id="statement">From just a narrow storefront, Starbucks offered some of the 
+           world's finest fresh-roasted whole bean coffees. The name,
+           inspired by Moby Dick, evoked the romance of the high seas
+           and the seafaring tradition of the early coffee traders.  
+        </article>
+        <div class="box"></div>
+        <div class="more"><a href="#more">MORE</a></div>
+        <img class="mainImg" src="img\img1.png" alt="drinks" >
+        <section class="socialmedia">
+            <ul>
+                <li><a href="#instagram"><img src="img\instagram.png" alt="IG"></a></li>
+                <li><a href="#twitter"><img src="img\twitter.png" alt="Twitter"></a></li>
+                <li><a href="#facebook"><img src="img\facebook.png" alt="Facebook"></a></li>  
+            </ul>    
+        </section>
+        
+    </main>
+
+    <div class="auto">
+        <footer>
+            <ul>
+                <li><img id="thumb1" src="img\thumb1.png" alt="drinks"></li>
+                <li><img id="thumb2" src="img\thumb2.png" alt="drinks"></li>
+                <li><img id="thumb3" src="img\thumb3.png" alt="drinks"></li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>
