@@ -14,7 +14,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        /* overflow: hidden; */
+        overflow: hidden;
     }
 
     header{
@@ -134,18 +134,22 @@
     }
     .auto{
         position: absolute;
-        left: 500px;
-        bottom: 30px;
+        left: 450px;
+        bottom: 420px;
     }
-    footer ul{
+    .auto ul{
         list-style-type: none;
     }
-    footer li{
+    .auto img{
+        width:100px;
+        height: 145px;
+    }
+    .auto li{
         display: inline-block;
         cursor: pointer;
         transition: 1.0s;
     }
-    footer li :hover{
+    .auto li :hover{
         transform: translate(-10px);
     }
 
@@ -183,18 +187,32 @@
                 <li><a href="#facebook"><img src="img\facebook.png" alt="Facebook"></a></li>  
             </ul>    
         </section>
+
+        <div class="auto">
+            <ul>
+                <li><img class="thumb" src="img\img1.png" alt="drinks"></li>
+                <li><img class="thumb" src="img\img2.png" alt="drinks"></li>
+                <li><img class="thumb" src="img\img3.png" alt="drinks"></li>
+            </ul>
+        </div>
+
+        <script>
+            function change(e){
+                let path = e.target.getAttribute("src");
+                document.querySelector(".mainImg").setAttribute("src", path);
+            }
+
+            function init(){
+                document.querySelectorAll(".thumb").
+                forEach(function(element){element.addEventListener("click", change);})
+            }
+
+            window.addEventListener("load", init);
+        </script>
         
     </main>
 
-    <div class="auto">
-        <footer>
-            <ul>
-                <li><img id="thumb1" src="img\thumb1.png" alt="drinks"></li>
-                <li><img id="thumb2" src="img\thumb2.png" alt="drinks"></li>
-                <li><img id="thumb3" src="img\thumb3.png" alt="drinks"></li>
-            </ul>
-        </footer>
-    </div>
+
 
 </body>
 </html>
